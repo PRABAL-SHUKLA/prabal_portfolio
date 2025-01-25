@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Swiper CSS for the slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- AOS CSS for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><b>PRABAL WELCOMES YOU !!</b></h1>
+            <p><b>A showcase of my work and skills</b></p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" data-aos="fade-right">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="image-container">
+                <!-- Image with animation -->
+                <img src="mypic.jpg" alt="mypic" class="animated-image">
+            </div>
+            <p data-aos="slide-right" data-aos-duration="1000">
+                Hello! I'm <b><i>PRABAL SHUKLA</i></b>,a <b><i>DATA SCIENCE UNDERGRAD</i></b> with a passion for <b><i>SOFTWARE DEVELOPMENT</i></b> and <b><i>DATA SCIENCE</i></b>. I love building projects and learning new technologies to create amazing user experiences.
+            </p>
+        </div>
+    </section>
+    <section id="resume-download">
+        <h2>Download My Resume</h2>
+        <a href="resume_prabal_shukla.pdf" target="_blank" class="btn-download">View/Download Resume</a>
+    </section>
+    
+
+    <section id="projects" data-aos="fade-right">
+        <div class="container">
+            <h2>Projects</h2>
+            <!-- Swiper Slider -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide project-item">
+                        <h3><b>VISUAL VERSE: ILLUMINATING IMAGE INSIGHTS</b></h3>
+                        <p>Caption generation is a difficult artificial intelligence challenge in which a textual description for a given photograph must be created.
+                            It necessitates both computer vision technologies for comprehending the image's content and a natural language processing language model.
+                            Converting the image's comprehension into words in the correct order. Deep Learning approaches have recently reached state-of-art results.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    <div class="swiper-slide project-item">
+                        <h3><b>TOURIST RECOMMENDATION SYSTEM</b></h3>
+                        <p>The tourism industry is one of the fastest-growing sectors worldwide, with travelers seeking personalized and relevant recommendations for their travel experiences.
+                            The primary challenge lies in creating a system that can provide tailored travel recommendations to users based on their preferences.
+                            The recommender system designed combines both recommender techniques based on content, and recommender techniques based on collaboration.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    <div class="swiper-slide project-item">
+                        <h3><b>QUIZ APPLICATION FOR ANDROID</b></h3>
+                        <p>An application for beginners consisting of quiz of multiple programming languages which helps in enhancing coding skills along with logic and improved learning.
+                            This application also evaluates the performance along with the explanation of every wrong answer and provides plus points accordingly.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..." required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email..." required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Prabal Shukla | Designed by Prabal</p>
+        </div>
+    </footer>
+    <!-- Footer Section -->
+<footer id="footer">
+    <div class="container">
+        <h2>Connect with Me</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/prabal-shukla-76004b228/" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/rizzz_prabalshukla/" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com/_Prabal_Shukla_" target="_blank" class="social-link">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com/prabal.shukla.5249" target="_blank" class="social-link">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Prabal Shukla. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+    <!-- Swiper JS for the slider -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- AOS JS for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
