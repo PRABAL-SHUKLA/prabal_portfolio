@@ -342,4 +342,81 @@ footer {
 .btn-download:hover {
     background-color: #0056b3;
 }
+:root {
+    /* Light mode colors */
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --link-color: #0066cc;
+}
+
+[data-theme="dark"] {
+    /* Dark mode colors */
+    --background-color: #333333;
+    --text-color: #ffffff;
+    --link-color: #00ccff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: var(--link-color);
+}
+
+button {
+    background-color: var(--link-color);
+    color: var(--background-color);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+:root {
+    /* Light Mode Colors */
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --link-color: #0066cc;
+}
+
+[data-theme="dark"] {
+    /* Dark Mode Colors */
+    --background-color: #333333;
+    --text-color: #ffffff;
+    --link-color: #00ccff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: var(--link-color);
+    transition: color 0.3s;
+}
+
+button {
+    background-color: transparent;
+    color: var(--link-color);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em; /* Adjust icon size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s;
+}
+header, footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+footer p {
+    color: var(--text-color);  /* Ensures the text color switches based on the theme */
+    margin: 0;
+}
 

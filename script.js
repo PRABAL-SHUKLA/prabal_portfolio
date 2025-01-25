@@ -73,4 +73,5 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   }
+
   
